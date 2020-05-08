@@ -4,7 +4,18 @@ namespace part1
   {
     public int Calculate(string a, string b)
     {
-      return 0;
+      string a = a.Length;
+      string b = b.Length;
+      amountOfHits = 0;
+
+      for (string a.Length = 0; a <= ; i++)
+      character
+      if (character == b index 0)
+      {
+        if
+      }     
+    }
+    return 0;
     }
   }
 }

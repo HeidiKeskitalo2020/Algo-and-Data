@@ -14,7 +14,7 @@ namespace part1
             Console.WriteLine(num.Sum(999999999)); // 81
 
             //ex2.
-            /*Substrings subs = new Substrings();
+            Substrings subs = new Substrings();
             subs.Calculate("aybabtu", "bab"); // 1
             subs.Calculate("aaaaa", "aa"); // 4
             subs.Calculate("monkey", "banana"); // 0
@@ -26,7 +26,7 @@ namespace part1
             Console.WriteLine(t.Calculate(new int[] {4,2,9,1,9,2,5})); // 323
 
             //ex4.
-            LuckyNumbers luck = new LuckyNumbers();
+            /*LuckyNumbers luck = new LuckyNumbers();
             Console.WriteLine(luck.Calculate(1,10)); // 2
             Console.WriteLine(luck.Calculate(123,321)); // 0
             Console.WriteLine(luck.Calculate(1,1000000)); // 126*/
