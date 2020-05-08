@@ -1,12 +1,17 @@
-namespace Part1
+namespace part1
 {
   public class Numbers
   {
-    List<int> numbers = new List<int>;
     public int Sum(int x)
-    for (int i = x; i < n; i++)
     {
-      return Sum += num[i];
+      int sum = 0;
+      while (x !=0)
+      {
+        sum += x %10;
+        x = x /10;
+      }
+      
+      return (sum);
     }
   }
 }
