@@ -14,10 +14,10 @@ namespace part1
             Console.WriteLine(num.Sum(999999999)); // 81
 
             //ex2.
-            Substrings subs = new Substrings();
-            subs.Calculate("aybabtu", "bab"); // 1
-            subs.Calculate("aaaaa", "aa"); // 4
-            subs.Calculate("monkey", "banana"); // 0
+            //Substrings subs = new Substrings();
+            //subs.Calculate("aybabtu", "bab"); // 1
+            //subs.Calculate("aaaaa", "aa"); // 4
+            //subs.Calculate("monkey", "banana"); // 0
 
             //ex3.
             Tables t = new Tables();
