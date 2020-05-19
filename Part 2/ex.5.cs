@@ -11,7 +11,8 @@ namespace part2
                 
                 if (t[i] == t[i-1]) 
                 {
-
+                    //something here
+                    //
                 }    
             }    
             return leftSum;
