@@ -1,44 +1,48 @@
+using System;
+using System.Collections.Generic;
 namespace part1
 {
   public class LuckyNumbers
   {
     public int Calculate(int a, int b)
+    { 
+      return CountNumbers(b) - CountNumbers(a - 1);
+    }
+    private int CountNumbers(int input)
     {
-           
-      for (int i = a; i <= b; i++)
-            {
-                sum3 = i * 10 + 3;
-                sum7 = i * 10 + 7;
-                if (a <= sum3 && sum3 <= b) 
-                {
-                    summa = summa + 1;
-                }
-                if (a <= sum7 && sum7 <= b)
-                {
-                    summa = summa + 1;
-                }
-            }
-            return summa;
-      
-      /*int[] a = new int [2];
-
-      a[0] = 3;
-      a[1] = 7;
-      ll i = 0;
-      ll pos = 2;
-      while(1)
+      List<int> list = new List<int>();
+      if (input >= 3)
       {
-        ll x=a[i]*10+3;
-        ll y=a[i]*10+7;
-        a[pos++]=x;
-        a[pos++]=y;
-        i++;
+        list.Add(3);
+      }
+      else
+      {
+        return 0;
+      }
+      if (input >= 7)
+      {
+        list.Add(7);
+      }
+      else return list.Count;
 
-        if(x> 1000000000)
+      int i = 0;
+      while (true)
+      {
+        int next = list[i] * 10 + 3;
+        int nextAfterThat = list[i] * 10 + 7;
+        if (next > input)
         {
           break;
-        }*/
-
+        }
+        list.Add(next);
+        if (nextAfterThat > input)
+        {
+          break;
+        }
+        list.Add(nextAfterThat);
+        i++;
+      }
+      return list.Count;
     }
   }
 }
