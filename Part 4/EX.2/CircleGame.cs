@@ -14,14 +14,13 @@ namespace part4
            }
            if (n % 2 == 0)
            {
-               return 2 * (n/2) -1;
+               return 2 * Last(n/2) -1;
            }
             else
             {
-               return 2 * ((n-1) /2)+1;
+               return 2 * Last((n-1) /2)+1;
             }
-
-          
+        
         }
     }
 }
