@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 namespace part4
 {
     class Program
@@ -15,5 +16,5 @@ namespace part4
             Console.WriteLine(myLinks.GetNode(0)); // 1
             Console.WriteLine(myLinks.GetNode(1)); // 3
         }
-    {
+    }
 }

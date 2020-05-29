@@ -1,15 +1,18 @@
 using System;
-
-public class Node
+namespace part4
 {
-  public int value;
-  public Node next { get; set; }
-  public Node previous { get; set; }
 
-  public Node(int value, Node next, Node previous)
+  public class Node
   {
-    this.value = value;
-    this.next = next;
-    this.previous = previous;
-  }
+    public int value;
+    public Node next { get; set; }
+    public Node previous { get; set; }
+
+    public Node(int value, Node next, Node previous)
+    {
+      this.value = value;
+      this.next = next;
+      this.previous = previous;
+    }
+  }  
 }
