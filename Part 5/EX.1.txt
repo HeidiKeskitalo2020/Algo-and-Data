@@ -1,0 +1,7 @@
+1. Both
+2. Both
+3. Only breadth-first search
+4. Both 
+5. Only depth-first search
+6. Both
+7. Only depth-first search / Both
