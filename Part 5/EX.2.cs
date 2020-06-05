@@ -25,7 +25,6 @@ namespace part5
         }
         public int Calculate(int x)
         {
-            List <int> visitedList = graph[x];
             if (visitedList.Contains(x))
             {
                 return 0;
@@ -34,7 +33,7 @@ namespace part5
 
             foreach (int i in graph[x])
             {
-                Calculate(n);
+                Calculate(i);
             }
             return visitedList.Count -1;
         }
