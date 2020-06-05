@@ -8,7 +8,7 @@ namespace part5
         static void Main(string[] args)
         {
             // EX.2
-
+            /*
             Connectivity c = new Connectivity(6);
             c.AddConnection(1,2);
             c.AddConnection(2,3);
@@ -18,7 +18,7 @@ namespace part5
             Console.WriteLine(c.Calculate(1)); // 3*/
 
             //EX.3
-            /*
+            
             Components k = new Components(6);
             k.AddConnection(1,2);
             k.AddConnection(2,3);
