@@ -18,7 +18,7 @@ namespace part5
             Console.WriteLine(c.Calculate(1)); // 3*/
 
             //EX.3
-            
+            /*
             Components k = new Components(6);
             k.AddConnection(1,2);
             k.AddConnection(2,3);
@@ -28,7 +28,7 @@ namespace part5
             Console.WriteLine(k.Calculate()); // 2*/
 
             //EX.4
-            /*
+            
             Communication com = new Communication(6);
             com.AddConnection(1,2);
             com.AddConnection(2,3);
