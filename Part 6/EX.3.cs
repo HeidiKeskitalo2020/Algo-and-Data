@@ -57,13 +57,13 @@ namespace part6
                     distance[i, j] = adjMatrix[i, j];
 
                     if (adjMatrix[i, j] != int.MaxValue && i != j)
+                    {    
                         parent[i, j] = 1;
-                    
+                    }
                     else
                     {
                         parent[i, j] = -1;
                     }
-            
                 }
             }
             
@@ -73,7 +73,7 @@ namespace part6
                 {
                     for (int j = 1; j < n + 1; j++)
                     {
-                        if (distance[i, j] == int.MaxValue || distance[k, j] == int.MaxValue)
+                        if (distance[i, k] == int.MaxValue || distance[k, j] == int.MaxValue)
                         {    
                             continue;
                         }    
@@ -85,7 +85,17 @@ namespace part6
                     }
                 }  
             }
-            return distance[x, y];
+            if (distance[x, y] == int.MaxValue)
+            {
+                return -1;
+            }
+            else
+            {
+                return distance[x, y];
+            }
+            
         }
     }
 }
+
+

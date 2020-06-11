@@ -34,10 +34,11 @@ namespace part6
 
         public int Calculate(int x, int y)
         {
+            int INF = 9999;
             int [] distance = new int[n + 1];
-            for(int i = 0; i < n + 1; i++)
+            for(int i = 1; i < n + 1; i++)
             {
-               distance[i] = int.MaxValue;
+               distance[i] = INF;
             }
             distance[x] = 0;
 
@@ -61,7 +62,15 @@ namespace part6
                     break;
                     }
                 }
-            return distance[y];
+
+                if (distance[y] == INF)
+                {
+                    return -1;
+                }
+                else
+                {
+                    return distance[y]; 
+                }
             }
         }
     }
