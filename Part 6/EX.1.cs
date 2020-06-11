@@ -14,13 +14,13 @@ namespace part6
         }
     }
     
-    public class ShortestPath 
+    public class  BellmanFord
     {
         public int n;
         
         public List <Edge> edges;
        
-        public ShortestPath(int n)
+        public BellmanFord(int n)
         {
             this.n = n;
             this.edges = new List<Edge>();
@@ -35,7 +35,7 @@ namespace part6
         public int Calculate(int x, int y)
         {
             int [] distance = new int[n + 1];
-             for(int i = 0; i < n + 1; i++)
+            for(int i = 0; i < n + 1; i++)
             {
                distance[i] = int.MaxValue;
             }
