@@ -28,7 +28,7 @@ namespace part5
             Console.WriteLine(k.Calculate()); // 2*/
 
             //EX.4
-            
+            /*
             Communication com = new Communication(6);
             com.AddConnection(1,2);
             com.AddConnection(2,3);
@@ -40,11 +40,12 @@ namespace part5
             Console.WriteLine(com.Examine(5,6)); // true*/
 
             //EX.5
-            /*
+            
             Labyrinth l = new Labyrinth();
             char[,] c = 
-            { {'#','#','#','#','#','#','#'},
-            {'#','x','#','.','y','.','#'},
+            { 
+            {'#','#','#','#','#','#','#'},
+            {'#','a','#','.','b','.','#'},
             {'#','.','#','.','#','.','#'},
             {'#','.','.','.','.','.','#'},
             {'#','#','#','#','#','#','#'} };
