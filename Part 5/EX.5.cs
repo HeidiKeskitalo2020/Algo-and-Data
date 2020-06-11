@@ -85,6 +85,8 @@ namespace part5
                     queueX.Enqueue(neighborX);
                     QueueY.Enqueue(neighborY);
 
+                /// Jatka tästä!!!
+
                 neighborX = CurrentX +1;
             }
             if (!visited[endY, endX])
