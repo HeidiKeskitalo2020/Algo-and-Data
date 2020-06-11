@@ -77,7 +77,7 @@ namespace part6
                         {    
                             continue;
                         }    
-                        if (distance[i,j] > distance[j, k] + distance[k, j])
+                        if (distance[i,j] > distance[i, k] + distance[k, j])
                         {
                             distance[i, j] = distance[i, k] + distance[k, j];
                             parent[i, j] = parent[k, j];
